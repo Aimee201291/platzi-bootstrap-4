@@ -44,7 +44,7 @@
                             <a class="nav-link" href="#become-a-speaker">Conviértete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+                            <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#buyModal">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -77,7 +77,7 @@
                                 </p>
                                 <!-- Ir a https://getbootstrap.com/docs/4.1/components/buttons/ -->
                                 <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                                <button class="btn btn-platzi" type="button">Comprar tickets</button>
+                                <button class="btn btn-platzi" data-toggle="modal" data-target="#buyModal" type="button">Comprar tickets</button>
                             </div>
                         </div>
                     </div>
@@ -256,6 +256,29 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <!-- Ir a https://getbootstrap.com/docs/4.1/components/modal/ -->
+    <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
